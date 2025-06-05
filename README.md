@@ -1,4 +1,4 @@
-# iot_temperature
+Iot Temperature
 
 IoT Project  
 **Course**: Internet of Things  
