@@ -8,8 +8,8 @@ DHT dht(26, DHT11);
 const char* ssid = "SENAC VISITANTES";
 const char* password = "trijuntos";
 
-const char* myWriteAPIKey = "8YT9WZ6AJ3OAUD9D";
-unsigned long myChannelNumber = 2982060;
+const char* myWriteAPIKey = "";
+unsigned long myChannelNumber ="";
 
 WiFiClient cliente;
 
