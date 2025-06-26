@@ -48,3 +48,7 @@ The internet acts as the main display interface, enabling **real-time remote mon
 ```plaintext
 [ Sensor ] → [ Vespa Microcontroller ] → [ Wi-Fi ] → [ ThingSpeak API ] → [ Dashboard / Visualization ]
 
+```
+## ThingSpeak 
+
+http://thingspeak.mathworks.com/channels/2982060 
