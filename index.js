@@ -19,7 +19,7 @@ setInterval(() => {
     .then((response) => response.json())
     .then((data) => {
       const weather = data.feeds[0];
-      h1.textContent = `${weather.field1.toFixed(2)}°C ${weather.field2.toFixed(1)} %`;
+      h1.textContent = `${(Number(weather.field1)).toFixed(2)}°C ${(Number(weather.field1)).toFixed(1)} %`;
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
