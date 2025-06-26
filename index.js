@@ -20,7 +20,7 @@ setInterval(() => {
     .then((data) => {
       const weather = data.feeds[0];
       const temperatureText = `Temperatura:<br> ${(Number(weather.field1)).toFixed(2)}°C`;
-      const humidityText = `Humidade:<br> ${(Number(weather.field2)).toFixed(1)}%`;
+      const humidityText = `Umidade:<br> ${(Number(weather.field2)).toFixed(1)}%`;
       h1.innerHTML = `<h1>${temperatureText}</h1><h1>${humidityText}</h1>`;
     })
     .catch((error) => {
