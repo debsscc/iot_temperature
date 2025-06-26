@@ -19,7 +19,9 @@ setInterval(() => {
     .then((response) => response.json())
     .then((data) => {
       const weather = data.feeds[0];
-      h1.textContent = `${(Number(weather.field1)).toFixed(2)}°C ${(Number(weather.field2)).toFixed(1)} %`;
+      const temperatureText = `Temperatura:<br> ${(Number(weather.field1)).toFixed(2)}°C`;
+      const humidityText = `Humidade:<br> ${(Number(weather.field2)).toFixed(1)}%`;
+      h1.innerHTML = `<h1>${temperatureText}</h1><h1>${humidityText}</h1>`;
     })
     .catch((error) => {
       console.error("Error fetching data:", error);
