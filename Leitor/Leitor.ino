@@ -45,13 +45,13 @@ void loop() {
   Serial.println(umid);
 
 
-  int x = ThingSpeak.writeField(myChannelNumber, 2, temp, myWriteAPIKey);
-  int y = ThingSpeak.writeField(myChannelNumber, 1, umid, myWriteAPIKey);
+  int x = ThingSpeak.setField(2, temp);
+  int y = ThingSpeak.setField(1, umid);
+  int z = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
 
   if(x == 200 && y == 200){
       Serial.println("dados enviados com sucesso.");
-    }
-    else{
+    }else{
       Serial.println("Problem updating channel. HTTP error code " + String(x));
       Serial.println("Problem updating channel. HTTP error code " + String(y));
     }
