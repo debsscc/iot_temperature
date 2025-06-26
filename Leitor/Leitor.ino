@@ -45,8 +45,8 @@ void loop() {
   Serial.println(umid);
 
 
-  int x = ThingSpeak.setField(2, temp);
-  int y = ThingSpeak.setField(1, umid);
+  int x = ThingSpeak.setField(1, temp);
+  int y = ThingSpeak.setField(2, umid);
   int z = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
 
   if(x == 200 && y == 200){
